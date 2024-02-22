@@ -1,0 +1,363 @@
+<!-- 
+        ******************  JAVASCRIPT *********************
+
+        JAVASCRIPT SYNTAX & STATEMENTS
+
+        JAVASCRIPT VARIABLES
+            * NAMING
+                The name must contain only letters, digits, or the symbols $ and _
+                The first character must not be a digit.
+            * CASE SENSITIVE
+            * RESERVED NAMES
+            https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#keywords
+
+
+            * CONSTANTS
+            * NAME THINGS RIGHT
+                A variable name should have a clean, obvious meaning, describing the data that it stores.
+                Use human-readable names like userName or shoppingCart.
+                Stay away from abbreviations or short names like a, b, c, unless you really know what you’re doing.
+                
+        JAVASCRIPT OPERATORS
+            * Arithmetic Operators
+            * Assignment Operators
+            * Comparison Operators
+            * Logical Operators
+            * JavaScript String Addition ( concatenation )****
+
+
+        JAVASCRIPT DATA TYPES
+            1. String
+            2. Number
+            3. Bigint
+            4. Boolean ***
+              * True or false 
+            5. Undefined
+            6. Null
+            8. Object ***
+              * An object
+              * An array
+              * A date ***
+
+            Javascript Math and Random Objects
+
+            JavaScript Types are Dynamic **
+        
+        Javascript Conditional Statements
+
+        Javascript Loops
+
+        Javascript Functions 
+
+        Problem solving - Exercises(Fizz Buzz)
+            * pseudocode
+
+            * https://www.theodinproject.com/lessons/foundations-problem-solving 
+
+
+
+
+
+
+
+       * Prompt user for input and save in a variable
+       * loop from 1 to the number user entered
+       * if the current number is a multiple of 3 print fizz
+       * if the current number is a multiple of 5 print buzz
+       * if the current number is a multiple of both 3 and 5 print fizzbuzz
+
+
+
+
+
+
+
+        Write a program that takes a user’s input and prints the numbers from one
+         to the number the user entered. However, for multiples of three print Fizz 
+         instead of the number and for the multiples of five print Buzz. 
+         For numbers which are multiples of both three and five print FizzBuzz.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        Exercises 
+            * Write a JavaScript program where the program takes a random integer between 1 and 10,
+             and the user is then prompted to input a guess number. The program displays a message
+              "Good Work" if the input matches the guess number otherwise "Not matched".  
+
+            * Write a JavaScript program to calculate multiplication and division of two numbers (input from the user).  
+
+            * Write a JavaScript program to get the difference between a given number and 13, 
+            if the number is greater than 13 return double the  difference.  
+
+            * Write a JavaScript program to compute the sum of the two given integers. 
+            If the two values are the same, then return triple their sum.
+
+            * Write a JavaScript program to compute the absolute difference between a specified number and 19. 
+            Returns triple the absolute difference if the specified number is greater than 19.  
+
+            * Write a JavaScript program to check a pair of numbers and return true if one of t
+            he numbers is 50 or if their sum is 50. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//keyword variable assignment value
+
+const MIN_AGE = 18;
+
+let age = 100;
+
+// let user = {
+//   firstName: "Richard",
+//   lastName: "Blackforce",
+//   DOB: "2024",
+//   password: "",
+//   hasSubscription: true,
+//   typeOfSubscription: "Basic",
+// };
+
+let subscriptionType = "Professional";
+// OPerators
+/*
+> greater than
+< less than
+
+*/
+
+// let car = {
+//   name: "Toyota",
+//   color: "blue",
+//   model: "Hilux",
+//   year: "2005",
+// };
+
+// car.name;
+
+// let user;
+// let greeting;
+// let name;
+
+// let hourOfTheDate = 14;
+
+// if (hourOfTheDate < 18 && hourOfTheDate > 12) {
+//   greeting = "Good afternoon";
+// } else if (hourOfTheDate < 12) {
+//   greeting = "Good morning ";
+// } else {
+//   greeting = "Good evening ";
+// }
+
+// if (user.subscription == "Professional" && user.age > 18) {
+// }
+
+const cars = ["Toyota", "BMW", "Volvo"];
+
+// for (let i = 0; i < cars.length; i++) {
+//   console.log(
+//     "This is the element with index " + i + " and the value is " + cars[i]
+//   );
+// }
+
+// if (username) {
+//   console.log("user entered a value");
+// } else {
+//   console.log("user did not enter a value");
+// }
+
+// function add() {
+//   let firstNumber =
+// }
+
+// let firstNumber = 2;
+
+// let secondNumber = 3;
+
+// let sum = firstNumber + secondNumber;
+
+// console.log(sum);
+
+// function add(firstNumber, secondNumber) {
+//   let sum = firstNumber + secondNumber;
+
+//   // console.log("The sum of both numbers is " + sum);
+
+//   return sum;
+// }
+
+// let result = add(20, 45);
+
+// console.log(result);
+
+// function greeting(userName, timeOfDay) {
+//   let greeting = "Good " + timeOfDay + " " + userName;
+//   return greeting;
+// }
+
+// let user = "Richard";
+// let response;
+
+// let hourOfTheDate = new Date().getHours();
+
+// if (hourOfTheDate < 18 && hourOfTheDate > 12) {
+//   response = greeting(user, "afternoon");
+// } else if (hourOfTheDate < 12) {
+//   response = greeting(user, "morning");
+// } else {
+//   response = greeting(user, "evening");
+// }
+
+// console.log(response);
+
+/* 
+    * Generate a random integer between 1 and 10, save in a variable
+        * prompt user for input then save in a variable
+        * If user input matches random number 
+            display response (Good work)
+        * or else display response (Not match)
+
+*/
+
+// let computerGuess = Math.floor(Math.random() * 10) + 1;
+
+// let userInput = parseInt(prompt("Please enter your guess"));
+
+// console.log(computerGuess);
+// console.log(userInput);
+
+// if (userInput === computerGuess) {
+//   console.log("Good work!");
+// } else {
+//   console.log("Not match");
+// }
+
+/* 
+  * Prompt user for input and save in a variable
+       * loop from 1 to the number user entered
+       * if the current number is a multiple of 3 print fizz
+       * if the current number is a multiple of 5 print buzz
+       * if the current number is a multiple of both 3 and 5 print fizzbuzz
+
+*/
+
+
+let userInput = parseInt(prompt("Please enter a number to play fizzbuzz"));
+
+for (let x = 1; x <= userInput; x++) {
+  if (x % 3 === 0 && x % 5 === 0) {
+    console.log("FizzBuzz");
+  } else if (x % 3 === 0) {
+    console.log("Fizz");
+  } else if (x % 5 === 0) {
+    console.log("Buzz");
+  } else {
+    console.log(x);
+  }
+}
+
+
+
+
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  color: #f2f2f2 !important;
+  float: right;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header {
+  border: 3px solid brown;
+  padding: 60px;
+  background-color: lightblue;
+  /* background-color: #f1f1f1; */
+  text-align: center;
+}
+
+.content {
+  display: flex;
+}
+
+.content > div {
+  flex: 1 1 0%;
+  background-color: DodgerBlue;
+  color: white;
+  margin: 20px;
+  text-align: center;
+}
+
+.content .column2 {
+  flex-grow: 2;
+}
+
+.footer {
+  background-color: #d57474;
+  padding: 10px;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+dadfd
+
+dadfkdj ;lkja jkj
+dkj 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        Javascript Assignment - Rock Paper scissors console game.
+          https://www.theodinproject.com/lessons/foundations-rock-paper-scissors
+
+        Css Assignment Walkthrough
+
+ -->

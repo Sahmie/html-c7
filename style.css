@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.computedClass {
+  color: purple;
+  text-decoration: underline;
+  text-align: center;
+  border: 1px solid green;
+}

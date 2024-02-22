@@ -1,0 +1,148 @@
+<!--
+
+   DOCUMENT OBJECT MODEL
+        The DOM (or Document Object Model) is a tree-like representation of 
+        the contents of a webpage - a tree of “nodes” with different relationships 
+        depending on how they’re arranged in the HTML document.
+
+        With the HTML DOM, JavaScript can access and change all the elements of an HTML document.
+
+    HTML DOM METHODS
+        When your HTML code is parsed by a web browser, it is converted to the 
+        DOM as was mentioned above. One of the primary differences is that 
+        these nodes are objects that have many properties and methods attached 
+        to them. 
+
+        * HTML DOM methods are actions you can perform (on HTML Elements).
+        * HTML DOM properties are values (of HTML Elements) that you can set or change.
+        
+        Hello 
+    * Query selectors
+    * Element creation
+        * Append elements
+        * Remove elements
+    * Adding inline style
+    * Editing attributes
+    * Working with classes
+    * Adding text content
+    * Adding HTML content
+    * Changing HTML Style
+
+
+    EVENTS
+
+
+    VCS - version control system
+    Cli terminal 
+      * ls
+      * cd 
+      * pwd
+      * create a folder
+      * copy, move, del
+      * navigation
+    GUI - graphical user interface
+    command prompt
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let user = {
+//   firstName: "Richard",
+//   lastName: "Blackforce",
+//   getFullName: function () {
+//     return this.firstName + " " + this.lastName;
+//   },
+// };
+
+// console.log(user.getFullName());
+
+// let h1Element = document.getElementById("demo1");
+// console.log(h1Element);
+
+let h1Element = document.querySelector("#demo");
+// let pElement = document.querySelector(".text");
+
+// let aTag = document.getElementsByTagName("p");
+// console.log(h1Element);
+// console.log(pElement);
+// console.log(aTag);
+
+h1Element.classList.add("computedClass");
+
+// create, append, delete html elements
+
+let imgTag = document.createElement("img");
+imgTag.src = "/HTLM_CSS/images/live_training.png";
+imgTag.setAttribute("id", "imgTag");
+
+// appending the element
+
+document.body.appendChild(imgTag);
+
+// list of programs
+let programs = ["Admin", "Developer", "Consultants"];
+let divContainer = document.createElement("div");
+
+divContainer.setAttribute("id", "call");
+
+let heading = document.createElement("h2");
+
+heading.innerText = "This is a list of Blackforce programs";
+
+let listOfPrograms = document.createElement("ul");
+
+for (let i = 0; i < programs.length; i++) {
+  let listItem = document.createElement("li");
+  listItem.innerText = programs[i];
+  listOfPrograms.appendChild(listItem);
+}
+
+divContainer.appendChild(heading);
+divContainer.appendChild(listOfPrograms);
+
+// add styles
+divContainer.style.color = "red";
+
+document.body.appendChild(divContainer);
+
+let h1Elem = document.querySelector("#demo");
+let imgElem = document.querySelector("#imgTag");
+// 3 ways listen or add events html
+// inline event on the element
+// assigning events to elements using the DOM
+// Event listeners
+
+// h1Elem.onclick = function () {
+//   alert("Element was click");
+// };
+
+// imgElem.onmouseover = function () {
+//   console.log("Hey i know you put your mouse over the image");
+// };
+
+h1Elem.addEventListener("click", function () {
+  console.log("Hey i know you clicked on an element");
+});
+
+
+
+
+
+
+
+
+
+
+   -->
