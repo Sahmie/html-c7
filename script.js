@@ -2,7 +2,7 @@ let firstElement = document.getElementById("fnum");
 let secondElement = document.getElementById("snum");
 let resultElement = document.getElementById("result");
 
-let addBtn = document.getElementById("add");
+let now = new Date();
 let divideBtn = document.getElementById("divide");
 
 function add(num1, num2) {
